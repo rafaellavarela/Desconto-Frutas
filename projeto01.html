@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div id="menu-bar">
+
+        <div id="menu" onclick="onClickMenu()">
+     
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+
+
+        </div>
+
+        <ul class="nav" id="nav">
+        <li> <a href="projeto02.html">Cadastro</a></li>
+        <li><a href="#">Produtos em destaque</a></li>
+        <li> <a href="#">Oferta de Frutas</a></li>
+        <li><a href="#">Verduras</a></li>
+        <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+   
+        <div style="background-image:url(imagens/frutascapa.png) ;" id="capa">
+
+            <h2 class="textprincipal">Frutas com Desconto</h2>
+ 
+            <section id="corpo">
+            <select nome="Frutas" id="lista">
+
+                <option value="Fruta" selected>Frutas</option>
+                <option value="Banana">Banana</option>
+                <option value="Maçã">Maçã</option>
+                <option value="Uva">Uva</option>
+                <option value="Mamão">Mamão</option>
+                <option value="Melão">Melão</option>
+                <option value="Abacate">Abacate</option>
+
+            </select>
+
+
+
+
+            <div id="resultado">
+                <p>Digite o valor do produto</p>
+                <p> Ganhe 5% de desconto em frutas selecionadas</p>
+                <input type="number" name="promocao" id="promocao" onblur="calcular()">
+                <input type="button" value="verificar" id="wid" onclick="calcular()">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <ul class="lista-frutas">
+            <li class="img-1">
+                <picture>
+                    <img src="imagens/banana.png.png" alt="Banana">
+                    <p class="esconder">
+
+                        Nomes populares: Banana, pacoba, pacova, inajá.
+                        Nome científico: Musa ssp.
+                        <br>
+                        <br>
+                        Vitaminas A, B e C são alguns dos nutrientes encontrados na banana. A presença de três tipos
+                        diferentes de açúcares naturais, sacarose, frutose e glicose, fazem com que ela seja uma ótima
+                        fonte
+                        de energia para o organismo, fornecendo 90 calorias a cada 100 gramas. Essa é uma fruta perfeita
+                        para abaixar o nível da pressão sanguínea por ter uma alta quantidade de potássio e uma pequena
+                        de
+                        sal. O mineral também combate o estresse e auxilia a aprendizagem.
+
+                        Por ser rica em fibras dietéticas, ela ajuda bastante na digestão. Além disso, permite o
+                        fortalecimento dos ossos e dentes devido ao seu cálcio e magnésio. Como é rica em ferro, previne
+                        a
+                        anemia, já que o mineral auxilia na produção de hemoglobina. A banana também tem como benefício
+                        reduzir estresse e depressão e melhorar a visão graças à vitamina A e ao betacaroteno. Ainda
+                        contém
+                        diversos outros sais minerais como manganês, zinco, fluoreto.
+                    </p>
+                </picture>
+            </li>
+            <li class="img-2">
+                <picture>
+                    <img src="imagens/maca.png.png" alt="Maçã">
+                    <p class="esconder">A maçã é uma fruta do gênero Malus que nasce da árvore macieira, da família
+                        Rosaceae, e originária do continente asiático. <br> Ela promove uma série de benefícios à saúde
+                        e
+                        ajuda na prevenção de algumas doenças, podendo ser consumida da várias maneiras. <br> Segundo a
+                        especialista, a casca da maçã é riquíssima em nutrientes antioxidantes: contém pectina, fibra
+                        que
+                        auxilia na melhora da digestão, sensação de saciedade, funcionamento intestinal, e também no
+                        controle da glicemia e colesterol. Também apresenta efeitos anti-inflamatório, anti-tumoral e
+                        promove melhora do sistema imunológico.</p>
+                </picture>
+            </li>
+            <li class="img-3">
+                <picture>
+                    <img src="imagens/uva.png.png" alt="Uva">
+                    <p class="esconder">A uva é uma fruta rica em antioxidantes, que são encontrados principalmente em
+                        sua casca, folhas e sementes, proporcionando diversos benefícios para a saúde, como prevenção do
+                        câncer, diminuição da fadiga muscular e melhora do funcionamento do intestino.
+                        Cada variedade de uva possui
+                        propriedades específicas, podendo ser obtida maior quantidades de benefícios quando são
+                        consumidas
+                        uvas verdes e roxas. </p>
+                </picture>
+            </li>
+            <li class="img-4">
+                <picture>
+                    <img src="imagens/mamao.png.png" alt="Mamão">
+                    <p class="esconder">O mamão é uma fruta extremamente nutritiva: possui mais de 80% de água em sua
+                        composição e é capaz de proporcionar benefícios para o corpo inteiro. <br>
+
+                        Além de possuir propriedades medicinais e ser considerada uma das frutas com efeito calmante
+                        natural, é rica em vitaminas A, C, cálcio, ferro, potássio, minerais e fibras, entre outros
+                        nutrientes.</p>
+                </picture>
+            </li>
+            <li class="img-5">
+                <picture>
+                    <img src="imagens/melao.png" alt="Melão">
+                    <p class="esconder">O melão é uma opção de fruta doce e refrescante para o verão, já que a maior
+                        parte
+                        da sua composição é formada por água. Além disso, é considerado um alimento pouco calórico: em
+                        100 g
+                        há cerca de 100 kcal. <br> É fonte de potássio, cálcio, fósforo, ferro e zinco, além de
+                        vitaminas A,
+                        C e do complexo B. Ele ainda contém fibras e antioxidantes que são importantes para o organismo.
+                    </p>
+                </picture>
+            </li>
+            <li class="img-6">
+                <picture class="img-6">
+                    <img src="imagens/abacate.png.png" alt="Abacate">
+                    <p class="esconder">Os abacates, assim como outras frutas e vegetais, contém vitaminas A e do
+                        complexo B
+                        e alguns sais minerais como ferro, cálcio e o fósforo. Eles são ricos em vitaminas E e C,
+                        potentes
+                        antioxidantes que ajudam a promover a saúde dos dentes e das gengivas, e também protegem os
+                        tecidos
+                        do corpo de danos oxidativos. Além disso, a presença de folatos (vitamina do complexo B) no
+                        abacate
+                        promove o desenvolvimento saudável das células e dos tecidos</p>
+                </picture>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="myscripts.js"></script>
+
+</body>
+
+</html>
